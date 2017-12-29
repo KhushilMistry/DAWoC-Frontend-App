@@ -46,7 +46,6 @@
     "react-bootstrap": "^0.31.5",
     "react-dom": "^15.5.0",
     "react-favicon": "0.0.11",
-    "react-github-login": "^1.0.3",
     "react-grid-system": "^3.1.2",
     "react-icons": "^2.2.7",
     "react-redux": "^5.0.2",
@@ -62,11 +61,10 @@
     "request": "^2.83.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
-    "webpack": "2.2.0-rc.3",
-    "webpack-dev-server": "2.1.0-beta.0",
-    "webpack-validator": "^2.3.0",
+    "webpack": "1.12.13",
     "webpack-bundle-analyzer": "^2.4.0",
     "webpack-dev-middleware": "^1.10.0",
+    "webpack-dev-server": "^2.9.7",
     "webpack-hot-middleware": "^2.16.1"
   },
   "devDependencies": {
