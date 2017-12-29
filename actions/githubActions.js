@@ -15,7 +15,7 @@ export default {
         const queryToken = res.data;
         axios({
           method: 'post',
-          url: 'https://dawocbackend.herokuapp.com//user',
+          url: 'https://dawocbackend.herokuapp.com/user',
           params: queryToken,
           headers: { 'Access-Control-Allow-Origin': 'https://github.com/login/oauth/access_token' }
         }).then((res) => {
