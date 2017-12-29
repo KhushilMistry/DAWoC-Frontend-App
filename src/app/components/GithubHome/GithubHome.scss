@@ -1,0 +1,81 @@
+.githubHome {
+  position: absolute;
+  background-image: url("../../../../images/cover.jpg");
+  height: 100%;
+  width: 100%;
+  margin : 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+  }
+}
+
+.coverLogo {
+  background-image: url("../../../../images/dawoclogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top : 10px;
+  left : 30px;
+  width : 45px;
+  height: 35px;
+  z-index: 1;
+}
+
+.githubContent {
+  height: 100%;
+  color : white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.githubButton {
+  z-index : 1;
+  margin: 20px;
+  padding: 5px;
+  font-size: 13px;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.githubButton:hover {
+  cursor: pointer;
+}
+
+
+.githubHeading {
+  z-index: 1;
+  font-size : 100px;
+  margin : 10px;
+}
+
+.smallHeading {
+  z-index : 1;
+  font-size: 25px;
+  margin : 10px;
+}
+
+.normalHeading {
+  z-index : 1;
+  font-size: 15px;
+  margin : 10px;
+}
+
+.githubIcon {
+  width : 24px;
+  height: 24px;
+  margin: 3px 3px 3px 0px;
+}

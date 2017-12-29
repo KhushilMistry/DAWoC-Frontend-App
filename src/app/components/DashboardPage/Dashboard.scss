@@ -1,0 +1,148 @@
+.adminNavBar {
+  position : absolute;
+  top : 10px;
+  width : 100%;
+  font-size: 18px;
+  text-align: right;
+  border-bottom: 1px solid #585858;
+  padding-bottom: 10px;
+  a {
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+.adminList {
+  padding-top: 50px;
+}
+
+.adminUserCard {
+  width: 46%;
+  border: 1px solid #585858;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 1% 1%;
+  float : left;
+
+  img {
+    width : 100px;
+    height : 100px;
+    border-radius: 50px;
+  }
+
+  .adminUserName {
+    position: absolute;
+    line-height: 1.4;
+  }
+
+}
+
+.adminHeading {
+  text-align: center;
+  font-size: 24px;
+}
+
+.githubProjectCard {
+  width: 27.1%;
+  padding: 1.5%;
+  margin: 1.5%;
+  float: left;
+  background-color: #fff;
+  border: 1px solid rgba(224, 224, 224, 0.5);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+  .githubProjectName {
+    a {
+      color: #333;
+      font-size: 18px;
+      line-height: 32px;
+      text-decoration: none;
+    }
+
+    float: left;
+    width: 66.66%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .githubProjectLanguage {
+    color: rgba(51, 51, 51, 0.75);
+    line-height: 32px;
+    font-size: 14px;
+    float: left;
+    width: 33.34%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  $font-size: 15px;
+  $line-height: 1.4;
+  $lines-to-show: 3;
+
+  .githubProjectDescription {
+    color: rgba(51, 51, 51, 0.75);
+    letter-spacing: 0.5px;
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-inline-box;
+    max-width: 400px;
+    height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .githubProjectMentor {
+    color: #333;
+    font-size: 16px;
+    line-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.inputHeading {
+  font-size: 24px;
+  margin: 15px 0px;
+  color: rgba(51, 51, 51, 0.75);
+}
+
+.login-input {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0px 0px;
+  outline: none;
+  width: 450px;
+  border: none;
+  border: solid 1px #bbbbbb;
+  border-radius: 5px;
+}
+
+.login-button {
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  border: none;
+  border: solid 1px #088837;
+  border-radius: 5px;
+  color : white;
+  background-color: #29b35b;
+}
+
+

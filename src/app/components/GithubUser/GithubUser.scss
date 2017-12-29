@@ -1,0 +1,231 @@
+.userCover {
+  background-image: url("../../../../images/cover.jpg");
+  height: 720px;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 720px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.userContent {
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.githubHeading {
+  z-index: 1;
+  font-size: 100px;
+  margin: 10px;
+}
+
+.smallHeading {
+  z-index: 1;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.normalHeading {
+  z-index: 1;
+  font-size: 19px;
+  letter-spacing: 0.75px;
+  margin: 15px;
+}
+
+.coverLogo {
+  background-image: url("../../../../images/dawoclogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 45px;
+  height: 35px;
+  z-index: 1;
+}
+
+.navbarLinks {
+  font-size: 18px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  z-index: 1;
+  a {
+    color: #d1d1d1;
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  a:hover {
+    background: rgba(0, 0, 0, 0.41);
+  }
+
+}
+
+.githubContribution {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.heading2 {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #222;
+  font-weight: 100;
+}
+
+.paddingTop {
+  padding-top: 20px;
+}
+
+.userInfo {
+  border-right: 2px solid #565656;
+}
+
+.userLogo {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.githubUserName {
+  font-size: 24px;
+  margin: 17px 0px;
+  color: #4d4d4d;
+}
+
+.githubName {
+  font-size: 18px;
+  color: #636363;
+}
+
+.githubContributionText {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p {
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+}
+
+.githubProjects {
+  background-color: #fafafa;
+  padding: 40px 0px;
+  .githubProjectCard {
+    width: 27.1%;
+    padding: 1.5%;
+    margin: 1.5%;
+    float: left;
+    background-color: #fff;
+    border: 1px solid rgba(224, 224, 224, 0.5);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
+    .githubProjectName {
+      a {
+        color: #333;
+        font-size: 18px;
+        line-height: 32px;
+        text-decoration: none;
+      }
+
+      float: left;
+      width: 66.66%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .githubProjectLanguage {
+      color: rgba(51, 51, 51, 0.75);
+      line-height: 32px;
+      font-size: 14px;
+      float: left;
+      width: 33.34%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    $font-size: 15px;
+    $line-height: 1.4;
+    $lines-to-show: 3;
+
+    .githubProjectDescription {
+      color: rgba(51, 51, 51, 0.75);
+      letter-spacing: 0.5px;
+      display: block; /* Fallback for non-webkit */
+      display: -webkit-inline-box;
+      max-width: 400px;
+      height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+      margin: 0 auto;
+      font-size: $font-size;
+      line-height: $line-height;
+      -webkit-line-clamp: $lines-to-show;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .githubProjectMentor {
+      color: #333;
+      font-size: 16px;
+      line-height: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.githubContribution {
+  padding: 40px 0px;
+}
+
+.githubContributionDesc {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.moreButton {
+  background-color: #fafafa;
+  margin-top: 25px;
+  padding: 10px 10px;
+  color: #585858;
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid rgba(224, 224, 224, 0.5);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+a:hover {
+  cursor: pointer;
+}
