@@ -9,7 +9,7 @@ export default {
         method: 'post',
         url: 'https://dawocbackend.herokuapp.com/github',
         params: query,
-        headers: { 'Access-Control-Allow-Origin': 'https://dawoc.herokuapp.com' }
+        headers: { 'Access-Control-Allow-Origin': 'https://dawocbackend.herokuapp.com/' }
       }).then((res) => {
         dispatch({ type: 'GITHUB_TOKEN', token: res.data });
         const queryToken = res.data;
@@ -17,7 +17,7 @@ export default {
           method: 'post',
           url: 'https://dawocbackend.herokuapp.com/user',
           params: queryToken,
-          headers: { 'Access-Control-Allow-Origin': 'https://dawoc.herokuapp.com' }
+          headers: { 'Access-Control-Allow-Origin': 'https://dawocbackend.herokuapp.com/' }
         }).then((res) => {
           dispatch({ type: 'GITHUB_SIGN_IN', data: res });
           dispatch({ type: 'LOADING_END'});
@@ -39,7 +39,7 @@ export default {
         method: 'post',
         url: 'https://dawocbackend.herokuapp.com/admin',
         params: query,
-        headers: { 'Access-Control-Allow-Origin': 'https://dawoc.herokuapp.com' }
+        headers: { 'Access-Control-Allow-Origin': 'https://dawocbackend.herokuapp.com/' }
       }).then((res) => {
         dispatch({ type: 'ADMIN_LOGIN' , data : res});
         dispatch({ type: 'LOADING_END'});
@@ -60,7 +60,7 @@ export default {
         method: 'post',
         url: 'https://dawocbackend.herokuapp.com/project',
         params: query,
-        headers: { 'Access-Control-Allow-Origin': 'https://dawoc.herokuapp.coms' }
+        headers: { 'Access-Control-Allow-Origin': 'https://dawocbackend.herokuapp.com/' }
       }).then((res) => {
         dispatch({ type: 'PROJECTS_LOAD' , data : res});
         dispatch({ type: 'LOADING_END'});
