@@ -7,7 +7,7 @@ export default {
       const query = res.code;
       axios({
         method: 'post',
-        url: 'https://dawocbackend.herokuapp.com/github',
+        url: 'https://da-woc.herokuapp.com/github',
         params: query,
         headers: { "Access-Control-Allow-Origin": "*" }
       }).then((res) => {
@@ -15,7 +15,7 @@ export default {
         const queryToken = res.data;
         axios({
           method: 'post',
-          url: 'https://dawocbackend.herokuapp.com/user',
+          url: 'https://da-woc.herokuapp.com/user',
           params: queryToken,
           headers: { "Access-Control-Allow-Origin": "*" }
         }).then((res) => {
@@ -37,7 +37,7 @@ export default {
       dispatch({ type: 'LOADING_START'});
       axios({
         method: 'post',
-        url: 'https://dawocbackend.herokuapp.com/admin',
+        url: 'https://da-woc.herokuapp.com/admin',
         params: query,
         headers: { "Access-Control-Allow-Origin": "*" }
       }).then((res) => {
@@ -58,7 +58,7 @@ export default {
       dispatch({ type: 'LOADING_START'});
       axios({
         method: 'post',
-        url: 'https://dawocbackend.herokuapp.com/project',
+        url: 'https://da-woc.herokuapp.com/project',
         params: query,
         headers: { "Access-Control-Allow-Origin": "*" }
       }).then((res) => {
