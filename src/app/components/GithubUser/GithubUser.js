@@ -66,7 +66,7 @@ class GithubUser extends React.Component {
                   </Col>
                   <Col>
                     <div className="githubContributionText">
-                      <p>Start contributing from <br /><b>6th January,2018</b></p>
+                      <p>Start contributing from <br /><b>11th January,2018</b></p>
                     </div>
                   </Col>
                 </Row>
